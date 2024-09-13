@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Responsive Kids' Clothes Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- SweetAlert2 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">
+            <img src="./photo.web/98070367a0bc4b11a446280eabae82fc-free (1).png" alt="Logo">
+        </a>
+        <!-- Menu Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Links -->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+        <!-- Icons -->
+        <div class="header-icon">
+            <i class='bx bx-cart' id="cart-icon" style="font-size: 24px; cursor: pointer;"></i>
+            <!-- Cart Popup -->
+            <div id="cart-popup" class="cart-popup">
+                <span class="close-btn" id="close-popup">&times;</span>
+                <h2>Your Cart</h2>
+                <div id="cart-items">
+                    <!-- المنتجات ستتم إضافتها هنا بواسطة JavaScript -->
+                </div>
+                <div id="cart-actions">
+                    <button id="clear-cart" class="btn">Clear Cart</button>
+                    <button id="check-out" class="btn">Check-Out</button>
+                </div>
+            </div>
+            <i class='bx bx-search' id="search-icon"></i>
+            </div>
+            <!-- Search Box -->
+        
+        
+        <div class="search-box">
+    <input type="text" id="search-input" placeholder="Search for a product..." />
+    <button id="search-button">Search</button>
+</div>
+        
+        
+        
+        <!--
+        <div class="search-box">
+            <input type="search" placeholder="Search Here...">
+        </div>
+        -->
+     
+        
+        
+        
+        
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Discover Children's Elegance <br> with [NoraBuds] </h1>
+            <p>
+"We offer you a diverse range of trendy and comfortable clothing for children of all ages. With excellent quality and stunning designs, we ensure their comfort and style."</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <!--
+        <div class="home-img">
+            <img src="" alt="">
+        </div>
+        -->
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://img.freepik.com/premium-photo/baby-girl-clothes_93675-56395.jpg?uid=R156157526&ga=GA1.2.287168524.1724778203&semt=ais_hybrid" alt="About Us">
+        </div>
+        <div class="about-text">
+            <h2>Our History</h2>
+<p>
+Welcome to [Your Brand Name]!
+At [Your Brand Name], we believe that every child deserves to feel special and look their best. Founded in [Year], we are dedicated to providing high-quality, stylish, and comfortable clothing for children of all ages. Our mission is to combine fun, fashion, and functionality to create clothing that your little ones will love to wear.
+</p>
+            <p>Our journey began with a simple idea: to offer parents a one-stop shop for all their children's clothing needs, where quality meets affordability. As parents ourselves, we understand the importance of finding durable and stylish clothing that can withstand the adventures of childhood. That's why we meticulously select our fabrics and designs to ensure they meet our high standards of comfort and durability.
+
+            </p>
+            <p>At [Your Brand Name], customer satisfaction is our top priority. We are here to make your shopping experience enjoyable and stress-free. If you have any questions or need assistance, our friendly support team is always ready to help.
+               Thank you for choosing [Your Brand Name]. We look forward to being a part of your child's wardrobe and making every moment special.
+
+           </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>Our Popular Products</h2>
+        </div>
+        <div class="products-container">
+            <div class="box">
+                <img src="https://t3.ftcdn.net/jpg/02/26/56/64/240_F_226566429_WaFEHgp39xGejGPHqwrKuYojDWIIEtba.jpg" alt="Americano Pure">
+                <h3>Two child warm vests, sweaters with hoods.</h3>
+                <div class="content">
+                    <span>$20</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t3.ftcdn.net/jpg/03/16/41/94/240_F_316419469_d0untqtJg0UTo8y2iDMocR4ME47xPV0s.jpg" alt="Americano Pure">
+                <h3>Jump suit.</h3>
+                <div class="content">
+                    <span>$22</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/01/34/18/79/240_F_134187922_hNlqF39ZBJpKQPXrP1feGz2srAGO2nPZ.jpg" alt="Americano Pure">
+                <h3>Pullover,jeans,sock and bonnet.</h3>
+                <div class="content">
+                    <span>$20</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t3.ftcdn.net/jpg/02/56/04/98/240_F_256049806_RcxZvAzUpYYnjQywaJQWQkcPcEmmxp4E.jpg" alt="Americano Pure">
+                <h3>Cotton striped summer dress.</h3>
+                <div class="content">
+                    <span>$8</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/02/09/43/59/240_F_209435965_fLYhcB3uhPEGgZSwwVATK4xW0K6VdBz8.jpg" alt="Americano Pure">
+                <h3>dress with booties.</h3>
+                <div class="content">
+                    <span>$14</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/04/19/64/53/240_F_419645377_3OCMB5gGQuSZpKw76DNrHm6qqJI6kyLd.jpg" alt="Americano Pure">
+                <h3>White baby girl or boy bodysuit.</h3>
+                <div class="content">
+                    <span>$6</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/03/61/65/13/240_F_361651331_YSLx3VLq4BPwSSxnnbk3EOa3xh0k6NvU.jpg" alt="Americano Pure">
+                <h3>Set of baby stuff and accessories. </h3>
+                <div class="content">
+                    <span>$19</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/02/99/69/85/240_F_299698562_PPdDGECWfwktHOny1PL0pGZ8xmQjFg2U.jpg" alt="Americano Pure">
+                <h3>red girls dress with white polka dots.</h3>
+                <div class="content">
+                    <span>$11</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/02/13/63/75/240_F_213637567_Apta5eevSmaOfu8AZvMhtiQ2VKLhaplb.jpg" alt="Americano Pure">
+                <h3>Footed pink baby pajam.</h3>
+                <div class="content">
+                    <span>$13</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="box">
+                <img src="https://t3.ftcdn.net/jpg/03/81/37/86/240_F_381378690_wb02O5VwJ2ltJoJQ3bLM79TeN8XDy5Gl.jpg" alt="Americano Pure">
+                <h3>Blue kid's sweatshirt with a hood.</h3>
+                <div class="content">
+                    <span>$8</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t3.ftcdn.net/jpg/00/49/20/68/240_F_49206828_X1L8xDVetHYVmuA6suTUTiMj9uX05SXT.jpg" alt="Americano Pure">
+                <h3>orange jacket.</h3>
+                <div class="content">
+                    <span>$17</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/01/26/30/83/240_F_126308392_kPd8Igs9HOE4BPpI3jH8cneDkO1kl9dM.jpg" alt="Americano Pure">
+                <h3>Blank grey baby child's shirt.</h3>
+                <div class="content">
+                    <span>$10</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/01/88/09/29/240_F_188092918_HGMGT6uWqnDDZ0gc4qVvI7Kv7au8D7qL.jpg" alt="Americano Pure">
+                <h3>dress and shoes.</h3>
+                <div class="content">
+                    <span>$10.5</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/02/04/93/89/240_F_204938915_00FVSLi9ZQspK64U8lOXOovETxy806Oq.jpg" alt="Americano Pure">
+                <h3>baby clothes and accessories.</h3>
+                <div class="content">
+                    <span>$18</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+            
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/01/03/70/33/240_F_103703325_GBDyqwRfgLtnCUzlusSMeictyAZIfD1m.jpg" alt="Americano Pure">
+                <h3>Knitted sweater for boy.</h3>
+                <div class="content">
+                    <span>$7</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            
+       
+         
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/00/97/30/25/240_F_97302545_OA81ZFOIwWuCbInuNEBmzV7ErYGyELAT.jpg" alt="Americano Pure">
+                <h3>Gray sweatpants.</h3>
+                <div class="content">
+                    <span>$4</span>
+                    <a href="#" data-name="Americano Pure" data-price="25" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Add more products here with similar structure -->
+        </div>
+    </section>
+    
+    <!-- Customers -->
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our Customers</h2>
+        </div>
+        <div class="customers-container">
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>"الواجهة بسيطة وسهلة الاستخدام، مما جعل عملية الدفع غير معقدة"</p>
+                <h2>Jalal Osama</h2>
+                <img src="https://img.freepik.com/free-photo/portrait-smiling-muslim-man-restaurant_23-2147794349.jpg?uid=R156157526&ga=GA1.1.287168524.1724778203&semt=ais_hybrid" alt="">
+            </div>
+            
+            
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>"الصور عالية الجودة وتظهر تفاصيل الملابس بوضوح. كان من السهل تحديد الحجم المناسب لطفلي"</p>
+                <h2>Jana Yasser</h2>
+                <img src="https://img.freepik.com/free-photo/happy-arab-woman-hijab-portrait-smiling-girl-posing-red-studio-background-young-emotional-woman-human-emotions-facial-expression-concept-front-view_155003-22795.jpg?uid=R156157526&ga=GA1.1.287168524.1724778203&semt=ais_hybrid" alt="">
+            </div>
+            
+            
+            
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+<p>"I received a very quick response from the support team when I inquired about the delivery process."</p>
+                <h2>Theo Oliver</h2>
+                <img src="https://img.freepik.com/free-photo/smiling-young-man-beach_23-2147645587.jpg?uid=R156157526&ga=GA1.1.287168524.1724778203&semt=ais_hybrid" alt="">
+            </div>
+            
+            
+            <!-- Add more customer testimonials here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>NoraBuds</h2>
+            <p>
+We'd love to hear from you! Whether you have questions, feedback, or need assistance, feel free to reach out to us. Our team is here to help you.</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+        <!-- Add more footer boxes if needed -->
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; CarpoolVenom All Rights Reserved</p>
+    </div>
+
+    <!-- Checkout Popup -->
+    <div id="checkout-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-checkout-popup" class="close">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                
+                <button type="submit">Submit Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link To JavaScript -->
+    <script src="main.js"></script>
+    <!-- SweetAlert2 Script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JavaScript for Cart and Checkout -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartPopup = document.getElementById('cart-popup');
+            const checkoutPopup = document.getElementById('checkout-popup');
+            const cartIcon = document.getElementById('cart-icon');
+            const closeCartPopup = document.getElementById('close-popup');
+            const checkOutButton = document.getElementById('check-out');
+            const closeCheckoutPopup = document.getElementById('close-checkout-popup');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const checkoutForm = document.getElementById('checkout-form');
+
+            // Show/Hide Cart Popup
+            cartIcon.addEventListener('click', () => {
+                cartPopup.style.display = 'block';
+            });
+            closeCartPopup.addEventListener('click', () => {
+                cartPopup.style.display = 'none';
+            });
+
+            // Show/Hide Checkout Popup
+            checkOutButton.addEventListener('click', () => {
+                checkoutPopup.style.display = 'block';
+            });
+            closeCheckoutPopup.addEventListener('click', () => {
+                checkoutPopup.style.display = 'none';
+            });
+
+            // Add item to cart
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const productName = button.getAttribute('data-name');
+                    const productPrice = button.getAttribute('data-price');
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item');
+                    cartItem.innerHTML = `<span>${productName}</span><span>$${productPrice}</span>`;
+                    cartItemsContainer.appendChild(cartItem);
+                    Swal.fire('Success!', 'Item added to cart.', 'success');
+                });
+            });
+
+            // Handle checkout form submission
+            checkoutForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                Swal.fire('Success!', 'Payment Successful. The products will arrive to you within 48h', 'success').then(() => {
+                    checkoutPopup.style.display = 'none';
+                    cartItemsContainer.innerHTML = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
